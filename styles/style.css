@@ -35,9 +35,14 @@ h1, h2, h3, h4, h5 {
     text-transform: uppercase;
 }
 
-#content h1 {
-    color: #000;
+.custom-toggler.navbar-toggler {
+    color: rgb(0, 0, 0,);
+    border-color: rgb(0, 0, 0);
 }
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
 
 .container-fluid:before, .container-fluid:after{
     display: table;
@@ -171,6 +176,10 @@ img {
     transition: background 500ms;
 }
 
+.tableContent {
+    margin-bottom: 40px;
+}
+
 #mainNavbar .navbar-brand {
     color: #000000;
     font-size: 1.5rem;
@@ -206,6 +215,15 @@ img {
     color: #000;
 }
 
+#content h1, h3 {
+    color: #000;
+    font-weight: 400;
+}
+
+#projectExplorer:hover{
+    background-color: #000;
+    color: #fff;
+}
 
 a, .accordion-header {
     transition: color .15s
